@@ -32,7 +32,7 @@ while True:
             
             saldo=saldo + v_depostio
             
-            extrato= extrato +"Deposito: " +str(v_depostio) + "\n"
+            extrato= extrato +'Deposito: %.2f' % (v_depostio) + "\n"
             
             print("Valor Depositado com sucesso!\n")
             
@@ -52,7 +52,7 @@ while True:
                     
                     saldo=saldo-v_saque
                     
-                    extrato= extrato +"Saque: "+ str(v_saque) + "\n"
+                    extrato= extrato +'Saque: %.2f' % (v_saque) + "\n"
                     
                     print("Saque efetuado com sucesso!")
                     
@@ -70,7 +70,7 @@ while True:
             
     elif opcao == "C":
         
-        extrato=extrato + "Saldo: " +str(saldo)+"\n" 
+        extrato=extrato + 'Saldo: %.2f' % (saldo)+"\n" 
         print(extrato)      
         
     elif opcao == "D":
